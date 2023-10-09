@@ -1,0 +1,213 @@
+* {
+    padding: 0; /*espaçamento entre a borda e conteúdo*/
+    margin: 0; /*espaçamento entre a boda da página e o container principal*/
+    box-sizing: border-box; /*com ele não é somado a largura do elemento com o espaçamentos interno*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipo da letra*/
+    /*color: rgb(4, 42, 89); /*cor da fonte*/
+}
+
+body{
+    /*background: rgb(119, 169, 231); /*Cor de fundo do body*/
+    margin: 0 auto; /*Definição das margens superior e inferior 0 e laterais automáticas*/
+    width: 100vw; /*100% da largura do dispositivo*/
+    height: 100vh; /*vh é a altura da tela visível - representaria 100% da altura da janela de visualização ou a altura total da tela. */
+}
+
+
+
+.principal{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%;
+    align-items: center;
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url(fundin.webp) no-repeat;
+    background-size: cover;
+   
+}
+
+.principal h1{
+    color:  #C396BF;
+    font-size: 60px;
+}
+
+.principal p{
+    color:  white;
+    font-size: 18px;
+}
+
+.p1{
+    margin-top: -20px;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn {
+    width: 90px;
+    height: 50px;
+    padding-top: 100px;
+    padding: 5px 15px;
+    background-color: #C396BF;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+/* Estilo do botão ao ser clicado */
+.btn:hover {
+    background-color: #8687BD;
+    color: white;
+}
+
+/* rosinha chiclete: #FFCABD
+   rosa chock: #EAACBB
+   roxinho: #C396BF
+   roxo mais escuro: #8687BD
+   azul: #2B7BAC
+*/
+
+/*.principal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+}*/
+
+/*h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}*/
+
+/*.princ1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+   background: rgba(255, 255, 255, 0.7);
+    
+}*/
+
+.princ1{
+    display: flex;
+    flex-direction: column;
+    /*padding: 60px;*/
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #C396BF;
+    align-items: center;
+    justify-content: space-between; /*os itens são distribuídos uniformemente na linha*/
+    padding: 0 50px 0 100px;
+    top: 0;
+}
+
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; /*tira estilo da lista não ordenada*/
+    
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500; /*especifica o peso ou a intensidade da fonte*/
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background: #8687BD;
+    color: #ffffff;
+}
+
+nav .menu-btn i{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #384B42;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+    background: none;
+    color: #C9CFCC;
+    }
+}
+
+
+
+/* rosinha chiclete: #FFCABD
+   rosa chock: #EAACBB
+   roxinho: #C396BF
+   roxo mais escuro: #8687BD
+   azul: #2B7BAC
+*/

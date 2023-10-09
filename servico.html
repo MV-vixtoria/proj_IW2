@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="servico.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">beautyDay</div>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+        
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="servico.html" class="active">Serviço</a></li>
+            </ul>
+        </nav>
+    
+        <div class="principal">
+
+            <div id="cartao" onclick="mostrarFormulario()">
+                <img src="fund_unha2.jpg" alt="Manicure e Pedicure">
+                <h2>Serviço de Manicure e Pedicure</h2>
+            </div>
+                <div id="formulario">
+                <h3>Selecione os serviços desejados:</h3><br>
+                        <label>
+                            <input type="checkbox" class="servico" value="20"> Manicure (R$ 20,00)
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" class="servico" value="30"> Pedicure (R$ 30,00)
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" class="servico" value="45"> Manicure e Pedicure (R$ 45,00)
+                        </label>
+                        <br><br>
+                        <p>Total: R$ <span id="total">0,00</span></p><br>
+                    </div>
+
+        </div>
+    </div>
+
+    <script src="servico.js"></script>
+</body>
+</html>
